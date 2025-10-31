@@ -1,0 +1,920 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+.holder{
+    background-image: url('image/background-home-desktop.jpg');
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 50px;
+}
+
+a{
+    opacity: 0.8;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: grey;
+}
+.you li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.you a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.you a::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+
+  transform: translateX(-50%);
+  height: 4px;
+  width: 0%;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.you a.active::after {
+  width: 50%;
+  background-color: white;
+}
+
+.you a.active {
+  color: white;
+  font-weight: 600;
+}
+
+/* Optional hover */
+.you a:hover::after {
+  width: 50%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    word-spacing: 10px;
+    align-items: center;
+    font-size: 20px;
+}
+li{
+    list-style: none;
+}
+.space{
+    font-size: 150px;
+    letter-spacing: 5px;
+}
+.div{
+    display: flex;
+    flex-direction: column;
+    width:500px;
+    gap: 20px;
+    opacity: 0.8;
+    padding-left: 100px;
+}
+.im{
+    width: 600px;
+}
+.ima{
+    width: 100%;
+}
+.so{
+    font-size: 40px;
+}
+.one{
+    font-size: 22px;
+    line-height: 30px;
+}
+.two{
+    display: flex;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: space-between;
+    top: -700px;
+    position: relative;
+    animation-name: same;
+    gap: 50px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+    }
+    @keyframes same{
+        from{transform: translateY(0px)}
+        to{transform: translateY(600px);}
+    }
+    
+    .seven{
+        animation-name: stev;
+    position: relative;
+    animation-duration: 2s;
+    
+    animation-fill-mode: forwards;
+    margin-right: 100px;
+}
+   @keyframes stev{
+        from{transform: translateX(600px)}
+        to{transform: translateX(0px);}
+    }
+.ex{
+    background-color: white;
+    padding: 150px;
+    height: 30%;
+    width: 30%;
+    border: none;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 24px;
+    letter-spacing: 5px;
+}
+.hold{
+    background-image: url('image/background-destination-desktop.jpg');
+    color: white;
+    height: 100%;
+    padding: 50px;
+    width: 100%;
+}
+.imgs{
+    width: 100%; 
+}
+.pick{
+    font-size: 30px;
+    opacity: 0.8;
+    letter-spacing: 5px;
+     position: relative;   
+}
+.imgs{
+    position: relative;
+    left: -700px;
+    animation-name: slid;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0, .77, 1, 1);
+}
+@keyframes slid{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(700px);
+    }
+}
+.sho{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+    opacity: 0.8;
+}
+.snail{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    opacity: 0.9;
+    position: relative;
+    right: -700px;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+     animation-timing-function: cubic-bezier(0, .77, 1, 1);
+}
+@keyframes slide{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-700px);
+    }
+}
+.sup{
+    background-color: blue;
+}
+.cl{
+    font-size: 100px;
+    margin-bottom: 50px;
+    letter-spacing: 10px;
+    margin-top: 70px;
+    opacity: 2;
+}
+.stor{
+    font-size: 24px;
+    opacity: 0.8;
+}
+hr{
+    opacity: 0.5;
+}
+.yes{
+    padding-top: 90px;
+    padding-left: 50PX;
+}
+.an{
+    display: flex;
+    flex-direction: column;
+}
+.nis{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.tab{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+}
+.bes{
+    display: flex;
+    gap:20px;
+}
+
+
+.tab {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  padding-bottom: 5px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.tab::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+
+
+.tab.active::after {
+  width: 100%;
+}
+
+.bl{
+    display: flex;
+    flex-direction: column;
+}
+.num{
+    font-size: 30px;
+}
+.beans{
+   background-image: url('image/background-crew-desktop.jpg');
+    color: #ffffff;
+    height: 100%;
+    padding: 50px;
+    width: 100%;
+}
+.display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation-name: some;
+    position: relative;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    margin-bottom: 20px;
+}
+   @keyframes some{
+        from{transform: translateY(1000px)}
+        to{transform: translateY(0px);}
+    }
+.js{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+
+    /*600px*/
+}
+P{
+    font-size: 30px;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+.ss{
+    font-size: 28px;
+    opacity: 0.6;
+    letter-spacing: 5px;
+}
+.you{
+    display: flex;
+    gap: 20px;
+}
+.a{
+    font-size: 50px;
+    letter-spacing: 5px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.burger{
+    display: none;
+}
+.word{
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: 3px;
+    padding-bottom: 100px;
+    opacity: 0.6;
+    width: 600px;
+}
+
+.box {
+  display: flex;
+  gap: 10px;
+}
+
+.tabs {
+  background: white;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  padding: 10px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transition: color 0.3s ease;
+}
+
+.tabs::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 40px;
+  
+  height: 4px;
+  width: 0%;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.tabs.active::after {
+  width: 120%;
+  margin: 0 auto;
+}
+
+
+.four{
+   background-image: url('image/background-technology-desktop.jpg');
+    color: white;
+    height: 100%;
+    padding: 50px;
+    width: 100%;  
+}
+.vie{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding-left: 50px;
+    align-items: center;
+}
+.five{
+    display: flex;
+    width: 700px;
+    gap: 100px;
+    animation-name: somess;
+    position: relative;
+  animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0, .77, 1, 1);
+}
+   @keyframes somess{
+  from{
+        transform: translateX(-800px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+    }
+.six{
+    display: flex;
+    flex-direction: column;
+}
+
+.pls{
+    font-size: 24px;
+    line-height: 1.5;
+    opacity: 0.5;
+}
+.tec{
+    font-size: 50px;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+.the{
+    font-size: 15px;
+    opacity: 0.5;
+}
+.jos{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.tas{
+    padding: 20px 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    width: 50%;
+    color: white;
+    border: 1px solid rgb(59, 56, 56);
+    background-color: inherit;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+
+.tas:hover{
+background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tas.active {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 768px){
+    .holder{
+        background-image: url('image/background-home-tablet.jpg');
+        height: 100%;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    word-spacing: 10px;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+    gap: 20px;
+}
+  .o{
+    display: none;
+  }  
+  .pick{
+    text-align: center;
+    font-size: 20px;
+  }
+  .two{
+    display: flex;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: space-between;
+    top: -700px;
+    flex-direction: column;
+    position: relative;
+    animation-name: same;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  .so{
+    font-size: 25px;
+    word-spacing:10px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 0px;
+    opacity: 0.7;
+  }
+  .space{
+    color: #ffffff;
+   font-size: 170px;
+   margin-top: 0px;
+  }
+  .one{
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 200px;
+    opacity: 0.7;
+  }
+  .ex{
+    text-align: center;
+    align-items: center;
+    background-color: #ffff;
+    margin: 0 auto;
+  }
+  .div{
+    padding-left: 0px;
+    opacity:1.9;
+  }
+  .hold{
+    background-image: url('image/background-destination-tablet.jpg');
+    color: white;
+    height: 100%;
+    padding: 20px;
+    width: 100%;
+
+}
+.sho{
+    padding: 0px;
+    display: flex;
+    opacity: 2;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.snail{
+    padding-top: 100px;
+    width: 90%;
+}
+.bes{
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    opacity: 0.9;
+}
+.yes{
+    padding: 0px;
+    text-align: center;
+}
+
+.imgs{
+    width: 100%;
+    margin-top: 100px;
+}
+.kis{
+    margin-bottom: 100px;
+}
+.stor{
+    opacity: 0.8;
+    color: #ffffff;
+}
+.beans{
+
+    background-image: url('image/background-crew-tablet.jpg');
+    color: #ffffff;
+    height: 100%;
+    padding: 20px;
+    width: 100%;
+
+}
+.display{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px;
+}
+.js{
+    width: 100%;
+    margin: 0 auto;
+}
+.ss{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+.ima{
+    padding-bottom: 50px;
+}
+.lop{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.box{
+    margin: 0 auto;
+}
+.a{
+    margin-top: 10px;
+    font-size: 45px;
+}
+.pop{
+    font-size: 30px;
+    padding-bottom: 30px;
+    opacity: 0.8;
+   text-align: center;
+   padding-left: 0px;
+}
+.vie{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px;
+}
+.four{
+   background-image: url('image/background-technology-tablet.jpg');
+    color: white;
+    height: 100%;
+    padding: 20px;
+    width: 100%;  
+}
+
+.tec{
+font-size: 40px;
+}
+.jos{
+    gap: 50px;
+}
+.seven{
+    margin-bottom: 50px;
+    margin-right: 0px;
+  
+}
+.the{
+    padding-bottom: 10px;
+}
+.five{
+    width: 650px;
+}
+}
+@media (max-width:480px){
+    .holder{
+    background-image: url('image/background-home-mobile.jpg');
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 50px;
+    
+}
+a{
+     opacity: 0.8;
+}
+.burger {
+  width: 50px;
+  cursor: pointer;
+  z-index: 1000;
+  display: block;
+}
+.you {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100vh;
+  background-image: url('image/background-destination-mobile.jpg');
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 120px;
+  padding-left: 30px;
+  border-radius: 10px 0 0 10px;
+  text-align: start;
+  z-index: 10;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  
+  /* Hidden by default */
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+/* When menu is open */
+.you.show {
+  transform: translateX(0);
+  opacity: 1;
+  display: flex;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    word-spacing: 10px;
+    align-items: center;
+    font-size: 15px;
+    gap: 20px;
+}
+
+
+.mon{
+    display: flex;
+    flex-direction: column;
+}
+.burger{
+    display: block;
+}
+.beans{
+
+    background-image: url('image/background-crew-mobile.jpg');
+    color: #ffffff;
+    height: 100%;
+    padding: 50px;
+    width: 100%;
+
+}
+.a{
+    font-size: 30px;
+    text-align: center;
+}
+
+.word{
+    font-size: 24px;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 30px;
+}
+.display{
+    padding: 0px;
+}
+.four{
+   background-image: url('image/background-technology-mobile.jpg');
+    color: white;
+    height: 100%;
+    padding: 50px;
+    width: 100%;  
+}
+.five{
+    width: 450px;
+    margin: 0 auto;
+    gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.jos{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+.tec{
+    font-size: 25px;
+}
+.pls{
+    text-align: start;
+    font-size: 24px;
+    width: 100%;
+}
+.seven{
+    margin-right: 0px;
+    
+}
+.space{
+    font-size: 120px;
+    text-align: center;
+}
+
+.div{
+    gap: 0px;
+}
+.cl{
+    font-size: 60px;
+}
+.stor{
+    opacity: 0.8;
+}
+}
+
+@media (max-width:360px){
+   
+    .holder{
+    background-image: url('image/background-home-mobile.jpg');
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 50px;
+    
+}
+a{
+     opacity: 0.8;
+}
+.burger {
+  width: 50px;
+  cursor: pointer;
+  z-index: 1000;
+  display: block;
+}
+.you {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0px; 
+  right: 0;
+  gap: 20px;
+  width: 200px;
+  height: 100vh;
+  background-image: url('image/background-destination-mobile.jpg');
+  background-size: cover;
+  background-position: center;
+  padding-top: 120px;
+  border-radius: 10px 0 0 10px;
+  padding-left: 30px;
+  padding-right: 20px;
+  z-index: 10;
+  text-align: start;
+  transition: transform 0.4s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    word-spacing: 10px;
+    align-items: center;
+    font-size: 15px;
+    gap: 20px;
+}
+
+
+.mon{
+    display: flex;
+    flex-direction: column;
+}
+.burger{
+    display: block;
+}
+.beans{
+
+    background-image: url('image/background-crew-mobile.jpg');
+    color: #ffffff;
+    height: 100%;
+    padding: 50px;
+    width: 100%;
+
+}
+.a{
+    font-size: 30px;
+    text-align: center;
+}
+
+.word{
+    font-size: 20px;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 30px;
+}
+.display{
+    padding: 0px;
+}
+.four{
+   background-image: url('image/background-technology-mobile.jpg');
+    color: white;
+    height: 100%;
+    padding: 50px;
+    width: 100%;  
+}
+.five{
+    width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.jos{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+.tec{
+    font-size: 25px;
+}
+.pls{
+    text-align: start;
+    font-size: 24px;
+    width: 100%;
+}
+.seven{
+    margin-right: 0px;
+    
+}
+
+.one{
+    width: 100%;
+   
+}
+.space{
+    font-size: 120px;
+    text-align: center;
+}
+
+.div{
+    gap: 0px;
+}
+.cl{
+    font-size: 80px;
+}
+.stor{
+    opacity: 0.8;
+}
+
+}
