@@ -524,6 +524,7 @@ nav {
   .div{
     padding-left: 0px;
     opacity:1.9;
+    
   }
   .hold{
     background-image: url('image/background-destination-tablet.jpg');
@@ -774,9 +775,10 @@ nav {
 
 .div{
     gap: 0px;
+    width: 70%;
 }
 .cl{
-    font-size: 60px;
+    font-size: 50px;
 }
 .stor{
     opacity: 0.8;
@@ -909,6 +911,7 @@ nav {
 
 .div{
     gap: 0px;
+    width: 50%;
 }
 .cl{
     font-size: 80px;
