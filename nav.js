@@ -1,37 +1,3 @@
-/*
-document.addEventListener('DOMContentLoaded', () => {
-  const burger = document.querySelector('.burger img');
-  const menu = document.querySelector('.you');
-  let menuOpen = false;
-
-  burger.addEventListener('click', () => {
-    menu.classList.toggle('show');
-    menuOpen = !menuOpen;
-    burger.src = menuOpen
-      ? 'image/icon-close.svg'
-      : 'image/icon-hamburger.svg';
-  });
-
-  highlightActiveLink();
-
-  function highlightActiveLink() {
-    const links = document.querySelectorAll('.you a');
-    let currentPage = window.location.href.split('/').pop().split('?')[0].split('#')[0];
-    if (!currentPage || currentPage === '/' || currentPage === '') {
-      currentPage = 'index.html';
-    }
-
-    links.forEach(link => {
-      const linkHref = link.getAttribute('href').split('/').pop();
-      if (linkHref === currentPage) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
-      }
-    });
-  }
-});
-*/
 
 document.addEventListener('DOMContentLoaded', () => {
   const burger = document.querySelector('.burger img');
@@ -46,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     burger.src = menuOpen
       ? 'image/icon-close.svg'
       : 'image/icon-hamburger.svg';
+      document.body.style.overflowY = menuOpen ? 'hidden' : 'auto'
   });
 
   // Highlight current page
