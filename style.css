@@ -27,7 +27,6 @@ body{
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: calc(100vh - 0px);
    height: auto;
    text-align: center;
     overflow-x: hidden;
@@ -224,7 +223,6 @@ opacity: 0.8;
     background-size: cover;
     background-position: center;
     padding: 20px 20px;
-    min-height: calc(100vh - 0px);
     height: auto;
 
     width: 100%;
@@ -340,7 +338,6 @@ opacity: 0.8;
 .beans{
    background-image: url('image/background-crew-mobile.jpg');
     color: #ffffff;
-    min-height: calc(100vh - 0px);
       height: auto;
 
     background-size: cover;
@@ -392,8 +389,9 @@ opacity: 0.8;
      animation-name: down; 
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    min-height: 100vh;
-    overflow: hidden;
+    height: auto;
+
+  
 }
 .lop{
     display: flex;
@@ -483,7 +481,7 @@ background-color: white
     color: white;
     background-size: cover;
     background-position: center;
-    min-height: calc(100vh - 0px);
+ 
 height: auto;
 
     padding:20px 20px;
@@ -606,7 +604,7 @@ background-color: rgba(255, 255, 255, 0.1);
     background-size: cover;
     background-position: center;
     width: 100%;
-    min-height: calc(100vh - 0px);
+
 height: auto;
 
     
@@ -669,7 +667,6 @@ a{
    .hold{
     background-image: url('image/background-destination-tablet.jpg');
     color: white;
-    min-height: calc(100vh - 0px);
      height: auto;
 
     padding: 20px 50px;
@@ -681,20 +678,15 @@ a{
 .beans{
    background-image: url('image/background-crew-tablet.jpg');
     color: #ffffff;
-    min-height: calc(100vh - 0px);
      height: auto;
-
     padding:20px 50px;
     flex-direction: column;
     width: 100%;
-
 }
 .four{
    background-image: url('image/background-technology-tablet.jpg');
-    color: white;
-    min-height: calc(100vh - 0px);
+    color: white;   
 height: auto;
-
     padding: 20px 50px;
     width: 100%;  
 }
@@ -711,7 +703,7 @@ height: auto;
     height: auto;
 }
 .tec{
-    font-size: 50px;
+    font-size: 40px;
 }
 }  
  
@@ -848,6 +840,7 @@ text-align: center;
     margin-top: 0px; 
     align-items: center;
     height: auto;
+    margin-bottom: 100px;
 
 }
 .pop{
@@ -864,10 +857,9 @@ text-align: center;
 .beans{
    background-image:url('image/background-crew-desktop.jpg');
     color: #ffffff;
-display: flex;
+   display: flex;
      justify-content: center;
    height: auto;
-
     width: 100%;
     padding:20px 50px;
     background-size: cover;
@@ -949,7 +941,7 @@ display: flex;
 .four{
    background-image: url('image/background-technology-desktop.jpg');
     color: white;
-    min-height: calc(100vh - 0px);
+    
    height: auto;
     padding:20px 50px;
     background-size: cover;
