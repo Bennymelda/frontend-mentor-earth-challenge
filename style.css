@@ -19,7 +19,7 @@ body{
     color: white;
 }
 .holder{
-    
+    min-height: 100vh;
     background-image: url('image/background-home-mobile.jpg');
     padding:20px 20px;
     background-size: cover;
@@ -82,7 +82,7 @@ nav{
     justify-content: space-between;
     word-spacing: 10px;
     align-items: center;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 50px;
 }
 .you li {
@@ -130,11 +130,11 @@ nav{
 }
 .you {
   position: fixed;
+  bottom: 0;
   top: 0;
   right: 0;
   width: 80%; /* wider, responsive */
   max-width: 300px; /* caps width on larger mobiles */
-  height: 100vh;
   background-image: url('image/background-destination-mobile.jpg');
   background-size: cover;
   background-position: center;
@@ -154,7 +154,7 @@ opacity: 0.8;
   pointer-events: auto;
   overflow-y: auto; /* allows scrolling if content is taller than viewport */
 }
-*/
+
 
 .mon{
     display: flex;
@@ -223,7 +223,7 @@ opacity: 0.8;
     background-size: cover;
     background-position: center;
     padding: 20px 20px;
-    height: auto;
+min-height: 100vh;
 
     width: 100%;
     overflow-x: hidden;
@@ -338,7 +338,7 @@ opacity: 0.8;
 .beans{
    background-image: url('image/background-crew-mobile.jpg');
     color: #ffffff;
-      height: auto;
+min-height: 100vh;
 
     background-size: cover;
     background-position: center;
@@ -389,9 +389,7 @@ opacity: 0.8;
      animation-name: down; 
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    height: auto;
 
-  
 }
 .lop{
     display: flex;
@@ -481,8 +479,7 @@ background-color: white
     color: white;
     background-size: cover;
     background-position: center;
- 
-height: auto;
+    min-height: 100vh;
 
     padding:20px 20px;
     width: 100%;  
@@ -545,7 +542,7 @@ background-color: rgba(255, 255, 255, 0.1);
     animation-timing-function: cubic-bezier(0, .77, 1, 1);
 }
 .pls{
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.5;
     opacity: 0.7;
     text-align: center;
@@ -604,8 +601,7 @@ background-color: rgba(255, 255, 255, 0.1);
     background-size: cover;
     background-position: center;
     width: 100%;
-
-height: auto;
+    min-height: 100vh;
 
     
 }
@@ -632,7 +628,7 @@ height: auto;
     width: 100%;
     margin-top: 0px;
     padding-top: 0px;
-    height: auto;
+    height: 5vh;
     max-width: 100%;
     pointer-events: auto;
     background-image: none;
@@ -667,8 +663,7 @@ a{
    .hold{
     background-image: url('image/background-destination-tablet.jpg');
     color: white;
-     height: auto;
-
+     min-height: 100vh;
     padding: 20px 50px;
     width: 100%;
 }
@@ -678,7 +673,7 @@ a{
 .beans{
    background-image: url('image/background-crew-tablet.jpg');
     color: #ffffff;
-     height: auto;
+min-height: 100vh;
     padding:20px 50px;
     flex-direction: column;
     width: 100%;
@@ -686,7 +681,8 @@ a{
 .four{
    background-image: url('image/background-technology-tablet.jpg');
     color: white;   
-height: auto;
+    min-height: 100vh;
+
     padding: 20px 50px;
     width: 100%;  
 }
@@ -718,7 +714,7 @@ height: auto;
     display: flex;
     flex-direction: column;
     width: 100%;
-   height: auto;
+   min-height: 100vh;
     overflow-x: hidden;
 }
 .you{
@@ -726,14 +722,13 @@ height: auto;
     position: static;
     transform: none;
     opacity: 1;
+    height: 5vh;
     flex-direction: row;
     background: none;
     width: 100%;
-    height: auto;
     margin-top: 0px;
     align-items: center;
     padding-top: 0px;
-    height: auto;
     gap: 30px;
     max-width: 100%;
 }
@@ -785,8 +780,7 @@ text-align: center;
 .hold{
     background-image: url('image/background-destination-desktop.jpg');
     color: white;
-    min-height: calc(100vh - 0px);
-    height: auto;
+    min-height: 100vh;
 
     padding: 20px 50px;
     width: 100%;
@@ -840,7 +834,7 @@ text-align: center;
     justify-content: center;
     margin-top: 0px; 
     align-items: center;
-    height: auto;
+   
     margin-bottom: 100px;
 
 }
@@ -859,8 +853,9 @@ text-align: center;
    background-image:url('image/background-crew-desktop.jpg');
     color: #ffffff;
    display: flex;
+ 
+   min-height: 100vh;
      justify-content: center;
-   height: auto;
     width: 100%;
     padding:20px 50px;
     background-size: cover;
@@ -942,8 +937,7 @@ text-align: center;
 .four{
    background-image: url('image/background-technology-desktop.jpg');
     color: white;
-    
-   height: auto;
+    min-height: 100vh;
     padding:20px 50px;
     background-size: cover;
     background-position: center;
