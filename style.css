@@ -4,16 +4,20 @@ body{
     padding: 0;
     box-sizing: border-box;
     color: white;
-   
 }
-
 .holder{
+    
     background-image: url('image/background-home-mobile.jpg');
-    padding:20px 50px;
+    padding:20px 20px;
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 100%;
+    min-height: calc(100vh - 0px);
+   height: auto;
+   text-align: center;
+    overflow-x: hidden;
     
 }
 @keyframes lefts{
@@ -69,13 +73,11 @@ nav{
     font-size: 20px;
     margin-bottom: 50px;
 }
-
 .you li {
   list-style: none;
   display: inline-block;
   position: relative;
 }
-
 .you a {
   position: relative;
   text-decoration: none;
@@ -95,18 +97,14 @@ nav{
   background-color: white;
   transition: width 0.3s ease;
 }
-
 .you a.active::after {
   width: 50%;
   background-color: white;
 }
-
 .you a.active {
   color: white;
   font-weight: 600;
 }
-
-
 .you a:hover::after {
   width: 50%;
 }
@@ -122,28 +120,29 @@ nav{
   position: fixed;
   top: 0;
   right: 0;
-  width: 200px;
+  width: 80%; /* wider, responsive */
+  max-width: 300px; /* caps width on larger mobiles */
   height: 100vh;
   background-image: url('image/background-destination-mobile.jpg');
   background-size: cover;
   background-position: center;
   flex-direction: column;
-  gap: 30px;
+  gap: 50px; /* slightly smaller gap to fit items */
   display: flex;
-  padding-top: 120px;
-  padding-left: 30px;
+  padding-top: 150px; /* reduce padding for small screens */
+  padding-left: 20px;
+  text-align: center;
+opacity: 0.8;
   border-radius: 10px 0 0 10px;
   text-align: start;
-  z-index: 10;
+  z-index: 1000;
   transition: transform 0.4s ease, opacity 0.4s ease;
   transform: translateX(100%);
   opacity: 0;
-  pointer-events: none;
+  pointer-events: auto;
+  overflow-y: auto; /* allows scrolling if content is taller than viewport */
 }
-
-
-
-
+*/
 
 .mon{
     display: flex;
@@ -151,69 +150,81 @@ nav{
 }
 .burger{
     display: block;
-    
+    position: relative;
+    z-index: 1100;
 }
     .div{
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+    text-align: center; 
+    margin-bottom: 50px;
 }
 .so{
-    font-size: 26px; 
+    font-size: 22px; 
     letter-spacing: 2px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     opacity: 0.8;
 }
 .one{
-    font-size: 24px;
-    padding-top: 30px;
-    line-height: 40px;
+    font-size: 20px;
+    padding-top: 20px;
+    line-height: 30px;
     text-align: center;
     opacity: 0.8;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
 }
 
 .two{
     display: flex;
-    margin-top: 50px;
+    margin-top: 20px;
     align-items: center;
     flex-direction: column;
     animation-name: slid;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    
+    margin-bottom: 20px;
     }
     .space{
-    font-size: 100px;
+    font-size: 50px;
     letter-spacing: 5px;
+    margin: 0;
 }
 .ex{
     background-color: white;
     padding: 150px;
-    height: 30%;
-    width: 30%;
+    height: 120px;
+    width: 120px;
     margin: 0 auto;
     border: none;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
     display: flex;
-    font-size: 24px;
-    letter-spacing: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 3px;
 }
 .hold{
     background-image: url('image/background-destination-mobile.jpg');
     color: white;
-    height: 100%;
-    padding: 20px 50px;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 20px;
+    min-height: calc(100vh - 0px);
+    height: auto;
+
     width: 100%;
+    overflow-x: hidden;
 }
 .pick{
-    font-size: 22px;
+    font-size: 18px;
     opacity: 0.8;
     white-space: nowrap;
-    letter-spacing: 5px;
-     position: relative;   
+    letter-spacing: 3px;
+     position: relative;  
+     text-align: center;
+     margin-top: 20px; 
 }
 .yes{
     margin-top: 50px;
@@ -222,7 +233,7 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 80px;
+    padding-top: 50px;
     opacity: 0.8;
    
 }
@@ -234,6 +245,7 @@ nav{
     align-items: center;
     justify-content: center;
     animation-duration: 2s;
+    overflow: hidden;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0, .77, 1, 1);
 }
@@ -241,9 +253,10 @@ nav{
 .bes{
     display: flex;
     gap:20px;
-    margin-top: 100px;
+    margin-top: 50px;
     justify-content: center;
    align-items: center;
+   flex-wrap: nowrap;
 }
 .you.show {
   transform: translateX(0);
@@ -291,9 +304,10 @@ nav{
 .bl{
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 .num{
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .cl{
@@ -313,9 +327,18 @@ nav{
 .beans{
    background-image: url('image/background-crew-mobile.jpg');
     color: #ffffff;
-    height: 100%;
-    padding:20px 50px;
+    min-height: calc(100vh - 0px);
+      height: auto;
+
+    background-size: cover;
+    background-position: center;
+    padding:20px 20px;
     width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+  
 }
 .js{
     display: flex;
@@ -352,14 +375,20 @@ nav{
     flex-direction: column-reverse;
     padding: 0px;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
      animation-name: down; 
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    min-height: 100vh;
+    overflow: hidden;
 }
 .lop{
     display: flex;
+    gap: 20px;
+    
     flex-direction: column-reverse;
+    align-items: center;
+    
 }
 .box {
   display: flex;
@@ -373,9 +402,9 @@ nav{
   border: none;
   cursor: pointer;
   position: relative;
-  padding: 5px;
-  width: 15px;
-  height: 15px;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   transition: color 0.3s ease;
 }
@@ -423,6 +452,11 @@ background-color: white
 .ima{
     width: 100%;
 }
+.age .imgs {
+    width: 80%; /* ensure it fits mobile */
+    max-width: 300px;
+    height: auto;
+}
 .pop{
     font-size: 25px;
     margin-top: 50px;
@@ -434,9 +468,14 @@ background-color: white
 .four{
    background-image: url('image/background-technology-mobile.jpg');
     color: white;
-    height: 100%;
-    padding:20px 50px;
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 0px);
+height: auto;
+
+    padding:20px 20px;
     width: 100%;  
+    overflow-x: hidden;
 }
 .vie{
     display: flex;
@@ -444,6 +483,7 @@ background-color: white
     padding: 0px;
     align-items: center;
     justify-content: center;
+    gap: 20px;
     
 }
 .jos{
@@ -457,14 +497,13 @@ background-color: white
 }
 
 .tas{
-    padding: 20px 30px;
+    padding: 15px 20px;
     background-color: red;
     text-align: center;
     justify-content: center;
     display: flex;
-    font-size: 20px;
-    width: 10%;
-    height: 20%;
+    font-size: 18px;
+    
     color: white;
     border: 1px solid rgb(59, 56, 56);
     background-color: inherit;
@@ -495,7 +534,7 @@ background-color: rgba(255, 255, 255, 0.1);
     animation-timing-function: cubic-bezier(0, .77, 1, 1);
 }
 .pls{
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.5;
     opacity: 0.7;
     text-align: center;
@@ -507,7 +546,7 @@ background-color: rgba(255, 255, 255, 0.1);
     letter-spacing: 5px;
     max-width: 100%;
     width: fit-content;
-    font-size: 40px;
+    font-size: 30px;
 }
 .the{
     font-size: 15px;
@@ -516,6 +555,10 @@ background-color: rgba(255, 255, 255, 0.1);
     margin-top: 20px;
 }
 .five{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     animation-name:side ;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -538,6 +581,8 @@ background-color: rgba(255, 255, 255, 0.1);
 
 .tru{
     width: 100%;
+    max-width: 400px;
+    display: block;
     margin: 0 auto;
   
 }
@@ -548,8 +593,20 @@ background-color: rgba(255, 255, 255, 0.1);
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100%;
+    min-height: calc(100vh - 0px);
+height: auto;
+
     
+}
+.cl{
+    font-size: 100px;
+}
+.tab{
+    font-size: 24px;
+}
+
+.pick{
+    font-size: 24px;
 }
 .burger{
     display: none;
@@ -561,10 +618,11 @@ background-color: rgba(255, 255, 255, 0.1);
     opacity: 1;
     flex-direction: row;
     background: none;
-    width: auto;
+    width: 100%;
     margin-top: 0px;
     padding-top: 0px;
     height: auto;
+    max-width: 100%;
     pointer-events: auto;
     background-image: none;
 }
@@ -575,67 +633,88 @@ a{
 .space{
     font-size: 150px;
 }
-    .burger{
-        display: non;
-    }
+   
    .so{
     padding-bottom: 0px;
    }
    .one{
     font-size: 24px;
     width: 75%;
+    line-height: 1.9;
+    
    } 
    .stor{
     width: 80%;
+    font-size: 24px;
    }
    .word{
     width: 80%;
     opacity: 0.6;
+    line-height: 1.6;
+    font-size: 26px;
    }
    .hold{
     background-image: url('image/background-destination-tablet.jpg');
     color: white;
-    height: 100%;
+    min-height: calc(100vh - 0px);
+     height: auto;
+
     padding: 20px 50px;
     width: 100%;
 }
-
+.a{
+    font-size: 50px;
+}
 .beans{
    background-image: url('image/background-crew-tablet.jpg');
     color: #ffffff;
-    height: 100%;
+    min-height: calc(100vh - 0px);
+     height: auto;
+
     padding:20px 50px;
+    flex-direction: column;
     width: 100%;
+
 }
 .four{
    background-image: url('image/background-technology-tablet.jpg');
     color: white;
-    height: 100%;
+    min-height: calc(100vh - 0px);
+height: auto;
+
     padding: 20px 50px;
     width: 100%;  
 }
 .seven{
     text-align: center;
+
+}
+.bl{
+    font-size: 28px;
 }
 .tru{
     width: 100%;
-    
     margin: 0 auto;
     height: auto;
 }
 .tec{
     font-size: 50px;
 }
-}   
+}  
+ 
+
+
 @media (min-width:1024px){
     .holder{
     background-image: url('image/background-home-desktop.jpg');
     padding:20px 50px;
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 100%;
-    
+   height: auto;
+    overflow-x: hidden;
 }
 .you{
     display: flex;
@@ -644,33 +723,55 @@ a{
     opacity: 1;
     flex-direction: row;
     background: none;
-    width: auto;
+    width: 100%;
+    height: auto;
     margin-top: 0px;
+    align-items: center;
     padding-top: 0px;
     height: auto;
     gap: 30px;
+    max-width: 100%;
+}
+nav{
+    margin-top: 0;
 }
 a{
     opacity: 0.8;
     display: flex;
     gap: 10px;
 }
+.space{
+    font-size: 120px;
+}
+.age .imgs{
+    width: 100%;
+
+}
 .two{
     display: flex;
     justify-content: space-between;
+    text-align: center;
     flex-direction: row;
     align-items: center;
-    padding: 0px 50px;
-    margin-top: 200px;
+    margin-top: 100px;
+    margin-bottom: 0;
+  
 }
 .one{
     text-align: start;
+    line-height: 1.4;
+    opacity: 0.7;
+    font-size: 24px;
 }
 .div{
    display: flex; 
    flex-direction: column;
    align-items: start;
-   width: 45%;
+   width: 50%;
+   margin-left: 0px;
+   margin-right: 0px;
+   
+   text-align: center;
 }
 .so{
 word-spacing: 20px;
@@ -679,9 +780,13 @@ text-align: center;
 .hold{
     background-image: url('image/background-destination-desktop.jpg');
     color: white;
-    height: 100%;
+    min-height: calc(100vh - 0px);
+    height: auto;
+
     padding: 20px 50px;
     width: 100%;
+   background-size: cover;
+   background-position: center; 
 }
 .sho{
     display: flex;
@@ -700,8 +805,10 @@ text-align: center;
     font-size: 120px;
 }
 .show{
-    width: 80%;
+    width: 100%;
+
 }
+
 .bes{
    display: flex;
    margin-top: 0px;
@@ -715,36 +822,49 @@ text-align: center;
 .o{
     display: block;
 }
+.sho{
+    gap: 100px;
+}
 .ss{
     font-size: 30px;
 }
 .display{
     display: flex;
     flex-direction: row;
-    padding: 0px 100px;
-    margin-top: 100px;
-    align-items: center;
     justify-content: center;
+    margin-top: 0px; 
+    align-items: center;
+    height: auto;
+
 }
 .pop{
     padding-left: 80px;
+    font-size: 24px;
 }
 .lop{
     display: flex;
     flex-direction: column;
-    width:85%;
-   
+    justify-content: space-between;
+    gap: 0px;
+
 }
 .beans{
-   background-image:none  url('image/background-crew-desktop.jpg');
+   background-image:url('image/background-crew-desktop.jpg');
     color: #ffffff;
-    height: 100%;
+display: flex;
+     justify-content: center;
+   height: auto;
+
+    width: 100%;
     padding:20px 50px;
-  
+    background-size: cover;
+   background-position: center;
 }
 .js{
     display: flex;
     width: 75%;
+    max-width: 900px;
+    margin: 0 auto;
     flex-direction: column;
     align-items: start;
 }
@@ -754,7 +874,7 @@ text-align: center;
     padding-bottom: 50px;
 }
 .a{
-    font-size: 60px;
+    font-size: 40px;
 }
 .box {
   display: flex;
@@ -764,15 +884,20 @@ text-align: center;
 }
 .seven{
     text-align: center;
-  
 }
+
 .vie{
     display: flex;
     flex-direction: row;
-    padding: 0px 50px;
+    gap: 50px;
     align-items: center;
-    gap: 200px;
+    padding: 0px 20px;
     justify-content: space-between;
+}
+.age .imgs {
+    width: 100%; /* ensure it fits mobile */
+    max-width: 500px;
+    height: auto;
 }
 .jos{
     display: flex;
@@ -787,31 +912,38 @@ text-align: center;
 .tru{
     width: 100%;
     margin: 0 auto;
+    max-width: 600px;
 }
     
 .five{
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 20px;
     align-items: center;
-    width: 50%;
-
+    width: 100%;
+    justify-content: space-between;
     margin: 0 auto;
 }
 .six{
     align-items: start;
+  width: 60%;
+  margin: 0 auto;
 }
 .pls{
     text-align: start;
-    font-size: 25px;
+    font-size: 24px;
 }
 .four{
    background-image: url('image/background-technology-desktop.jpg');
     color: white;
-    height: 100%;
+    min-height: calc(100vh - 0px);
+   height: auto;
     padding:20px 50px;
+    background-size: cover;
+    background-position: center;
     width: 100%;  
 }
 }
+
 
 
