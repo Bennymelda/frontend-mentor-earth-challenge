@@ -1,10 +1,4 @@
-/*
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-*/
+
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +11,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     color: white;
+    font-family: sans-serif;
 }
 .holder{
     min-height: 100vh;
@@ -89,6 +84,7 @@ nav{
   list-style: none;
   display: inline-block;
   position: relative;
+  
 }
 .you a {
   position: relative;
@@ -96,6 +92,7 @@ nav{
   color: white;
   font-weight: 400;
   transition: color 0.3s ease;
+  
 }
 
 .you a::after {
@@ -360,6 +357,7 @@ min-height: 100vh;
     opacity: 0.8;
     letter-spacing: 5px;
     margin-top: 50px;
+    white-space: nowrap;
     
 }
 
@@ -560,6 +558,7 @@ background-color: rgba(255, 255, 255, 0.1);
     font-size: 15px;
     opacity: 0.5;
     margin-bottom: 10px;
+    white-space: nowrap;
     margin-top: 20px;
 }
 .five{
@@ -618,17 +617,23 @@ background-color: rgba(255, 255, 255, 0.1);
 .burger{
     display: none;
 }
+.you a{
+    align-items: center;
+  display: flex;
+  flex-direction: row;
+}
 .you{
     display: flex;
     position: static;
     transform: none;
+    align-items: center;
     opacity: 1;
     flex-direction: row;
     background: none;
     width: 100%;
     margin-top: 0px;
     padding-top: 0px;
-    height: 5vh;
+    height: 10vh;
     max-width: 100%;
     pointer-events: auto;
     background-image: none;
@@ -729,14 +734,18 @@ min-height: 100vh;
    min-height: 100vh;
     overflow-x: hidden;
 }
-
+.you a{
+    align-items: center;
+  display: flex;
+  flex-direction: row;
+}
 
 .you{
     display: flex;
     position: static;
     transform: none;
     opacity: 1;
-    height: 5vh;
+    height: 10vh;
     flex-direction: row;
     background: none;
     width: 100%;
@@ -748,6 +757,7 @@ min-height: 100vh;
 }
 nav{
     margin-top: 0;
+    
 }
 a{
     opacity: 0.8;
@@ -769,7 +779,7 @@ a{
     flex-direction: row;
     align-items: center;
     margin-top: 100px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   
 }
 .one{
@@ -782,14 +792,14 @@ a{
    display: flex; 
    flex-direction: column;
    align-items: start;
-   width: 50%;
+   width:100%;
    margin-left: 0px;
    margin-right: 0px;
-   
+   margin-bottom: 0px;
    text-align: center;
 }
 .so{
-word-spacing: 20px;
+word-spacing: 10px;
 text-align: center;
 }
 .hold{
@@ -815,6 +825,7 @@ text-align: center;
 .stor{
     text-align: start; 
     font-size: 24px;
+    width: 100%;
 }
 .cl{
     font-size: 100px;
@@ -870,7 +881,6 @@ text-align: center;
    display: flex;
  
    min-height: 100vh;
-     justify-content: center;
     width: 100%;
     padding:20px 50px;
     background-size: cover;
@@ -878,7 +888,7 @@ text-align: center;
 }
 .js{
     display: flex;
-    width: 75%;
+    width: 100%;
     max-width: 900px;
     margin: 0 auto;
     flex-direction: column;
@@ -915,6 +925,9 @@ text-align: center;
     max-width: 500px;
     height: auto;
 }
+.snail{
+    margin-top: 50px;
+}
 .jos{
     display: flex;
     flex-direction: column;
@@ -934,7 +947,7 @@ text-align: center;
 .five{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 50px;
     align-items: center;
     width: 100%;
     justify-content: space-between;
@@ -942,7 +955,7 @@ text-align: center;
 }
 .six{
     align-items: start;
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
 }
 .pls{
